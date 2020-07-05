@@ -82,6 +82,7 @@ body{
   margin-top: 5rem;
   padding-right: 15px;
   padding-left: 15px;
+  width: 100%;
 }
 
 .Characters{
@@ -122,7 +123,9 @@ p.Character-item-status{
 
 .Characters-card{
   display: flex;
+  flex-flow: column;
   border-radius: 6px;
+  margin: 0 auto 5rem auto;
   align-items: center;
   padding: 2rem;
 }
@@ -133,7 +136,7 @@ p.Character-item-status{
 }
 
 .Characters-card-info{
-  padding-left: 2rem;
+  padding-left: 0rem;
 }
 
 .Characters-card-info h2{
@@ -191,5 +194,12 @@ p.Character-item-status{
   .Character-item:hover{
     transform: translateY(-4px);
     transition: .3s all ease;
+  }
+  .Characters-card {
+    flex-flow: row;
+  }
+  .Characters-card-info{
+    padding-left: 2rem;
+    width: 50%;
   }
 }
